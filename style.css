@@ -1,0 +1,184 @@
+:root {
+  --warning: rgb(214, 162, 18);
+  --info: rgb(75, 113, 227);
+  --danger: #e7514f;
+  --succes: #37b068;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* min-height: 100vh; */
+  background: #333;
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 500px;
+  min-height: 250px;
+  padding: 30px 40px 20px 40px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  position: relative;
+  color: var(--info);
+  border: 1px solid white;
+}
+
+.modal-title {
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 10px 0px;
+  font-family: "SF Pro Display Regular";
+}
+
+.modal .danger {
+  color: var(--danger);
+}
+
+.modal .warning {
+  color: var(--warning);
+}
+
+.modal .succes {
+  color: var(--succes);
+}
+
+.modal-title-icon {
+  margin-bottom: 18px;
+  width: 35px;
+  height: 35px;
+}
+
+.modal-description {
+  font-size: 18px;
+  line-height: 25px;
+  color: rgb(145, 145, 145);
+  font-family: "SF Pro Light";
+}
+
+.modal-buttons button {
+  padding: 8px;
+  letter-spacing: 1px;
+  width: 130px;
+  margin-top: 25px;
+  margin-right: 20px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "SF Pro Light";
+}
+
+.modal-buttons button:hover {
+  opacity: 80%;
+}
+
+.modal-accept {
+  background: var(--succes);
+}
+
+.modal-decline {
+  background: var(--danger);
+}
+
+.modal-close-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-close-icon:hover {
+  color: red;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.action-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: "SF Pro Display Regular";
+  margin: 15px;
+  padding: 15px;
+  width: 200px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.action-btn:hover {
+  background-color: #333;
+  color: white;
+  border: 1px solid white;
+}
+
+.action-two-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: "SF Pro Display Regular";
+  margin: 15px;
+  padding: 15px;
+  width: 200px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.action-two-btn:hover {
+  background-color: #333;
+  color: white;
+  border: 1px solid white;
+}
+
+.action-default {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: "SF Pro Display Regular";
+  margin: 15px;
+  padding: 15px;
+  width: 200px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.action-default:hover {
+  background-color: #333;
+  color: white;
+  border: 1px solid white;
+}
